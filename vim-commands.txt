@@ -1,0 +1,54 @@
+MOVIMIENTOS
+g -> izquierdo
+j -> abajo
+k -> arriba
+l -> derecha
+w -> principio proxima palabra
+b -> principio palabra anterior
+e -> final proxima palabra
+(number) + G -> navergar a la linea especificada
+
+INSERTAR TEXTO
+i -> Modo insert, antes del cursor
+a -> Modo insert, despues del cursor
+A -> Modo insert, al final de la linea
+
+ELIMINAR TEXTO
+x -> elimina el caracter sobre el que esta el cursor
+dw -> eliminar palabra
+d$ -> Elimina el contenido de la linea desde el cursor
+- d se pueden convinar con cualquier operador de movimiento (de, dw, db, etc.)
+- Agregando un numero despues de la d se realiza la accion x veces (d3w, borrar 3 palabras)
+dd -> elimina toda la linea
+TODO LO QUE SE BORRA QUEDA GUARDADO EN EL CLIPBOARD
+
+GUARDAR ARCHIVO
+:w + ENTER -> Guardar archivo
+:wq + ENTER -> Guardar y cerrar archivo
+
+NAVEGAR ENTRE ARCHIVOS
+gd -> definicion de variables, constantes, etc.
+gf -> archivo donde se encuentra definida la variable, constance, funcion, etc.
+Ctrl + o -> Navegar hacia atras
+Ctrl + i -> Navegar hacia adelante
+
+DESHACER CAMBIOS
+u -> deshacer ultimos cambios
+
+REHACER CAMBIOS
+Ctrl + r -> rehacer ultimos cambios
+
+AUTO-INDENT
+gg=G -> Auto indent all file, gg (go top) = (command to auto indent) G (to the bottom)
+
+COPIAR
+p -> Pega el contenido guardado en el clip board despues del puntero.
+P -> Pega el contenido guardado en el clip board antes del puntero.
+
+REMPLAZAR
+r + caracter -> remplaza el caracter donde esta el cursor
+
+OPERADOR DE CAMBIO
+cw -> Change word desde donde sta el cursor
+ciw -> Cambia toda la palabra
+
